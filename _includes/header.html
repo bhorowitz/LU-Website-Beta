@@ -1,35 +1,20 @@
 <html>
   <head>
-      <title>{% if page.title and page.title != "Index" %} {{ page.title }}{% if section.title %} :: {% endif %}{% endif %}{% if section.title %}{{ section.title}}{% endif %}</title>
-    <link rel="stylesheet" type="text/css" href="/media/css/content-pages.css" />
-    <script type="text/javascript">
-      function make_normal()
-      {
-      document.getElementById("go_normal").style.display = "inline";
-      document.getElementById("go_hover").style.display = "none";
-      }
 
-      function hover_go()
-      {
-      document.getElementById("go_hover").style.display = "inline";
-      document.getElementById("go_normal").style.display = "none";
-      }
-    </script>
+
+
+    <title>Learning Unlimited</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/content-pages.css" />
+<link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
   </head>
-  <body>
+  <body class="no-sidebar">
+    <div id="page-wrapper">
 
-    <div id="content">
-      <div id="header">
-        <div id="logo">
-          <a href="/"><img src="/media/images/content-pages/logo.gif" alt="Learning Unlimited" /></a>
-        </div>
+      <!-- Header -->
 
-        <div id="navbar">{% include navbar.html %}</div>
-
-        <div class="hr"><hr/></div>
-
-      </div>
-
-      <div id="body">
-        
-      <div id="subnavbar">{% include subnavbar.html %}</div>

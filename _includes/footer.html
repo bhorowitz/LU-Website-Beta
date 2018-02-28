@@ -1,22 +1,171 @@
-      </div>
+		<!-- Footer -->
+				<div id="footer-wrapper">
+					<section id="footer" class="container">
+						<div class="row">
+							<div class="8u 12u(mobile)">
+								<section>
+									<header>
+										<h2>Upcoming Programs</h2>
+									</header>
+									<ul class="dates">
+										<p id="someElement"></p>
+										        <script type="text/javascript">
+										        function customFooter(){
 
-      <div id="footer">
-	<div class="hr"><hr/></div>
+										        	$.getJSON( "/media/databases/program_dates.json", function(dataIn) {
+										        	
+										        	var today = new Date();
+										        	var counter_max = 6
+										        	data = dataIn
+										        	
+										        	var content = "";
 
-        <img src="/media/images/content-pages/footer.gif" alt="Learning Unlimited / info@learningu.org / 617-379-0178" />
-      </div>
-    </div>
+										        	var month = new Array();
+										        	month[0] = "Jan";
+										        	month[1] = "Feb";
+										        	month[2] = "Mar";
+										        	month[3] = "Apr";
+										        	month[4] = "May";
+										        	month[5] = "June";
+										        	month[6] = "July";
+										        	month[7] = "Aug";
+										        	month[8] = "Sep";
+										        	month[9] = "Oct";
+										        	month[10] = "Nov";
+										        	month[11] = "Dec";
+										        	//document.write(data["items"]);
+										        	counter = 0
+										        	for(var i in data["items"]){
+										        		var date = new Date(data["items"][i].date)
+										        		if(today<date & counter < counter_max){
+										        		var url = data["items"][i].program_url;
+										        		var name= data["items"][i].program_name;
+										        		var note = data["items"][i].subtext;
 
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ?  "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-11039829-1");
-pageTracker._trackPageview();
-} catch(err) {}
-</script>
 
-  </body>
+										 
+										        		content += "<li> <span class='date'>"+ month[date.getMonth()]+ "<strong>"+date.getDate()+"</strong></span><h3><a href="+url+">"+name+" </a></h3><p>" + note+"</p></li>"
+										        		counter += 1
+										        	    }
+										        	}
+										        	console.log(content)
+										        	document.getElementById('someElement').innerHTML = content
+										        	return content;
+										        }
+										        )}
+		                                  $(document.body).append(customFooter());
+		                                 
+										  </script>
+									</ul>
+							</div>
+							<div class="4u 12u(mobile)">
+								<section>
+									<header>
+										<h2>Interested in seeing more Splash?</h2>
+									</header>
+								
+									<p>
+										We are an entirely volunteer run, 501(c)3 organization and we rely on the ongoing generosity of community members like you to provide resources to existing programs and to mentor new ones!
+									</p>
+									<footer>
+										<a href="https://donatenow.networkforgood.org/1442637" class="button">Donate</a>
+									</footer>
+								</section>
+								<section>
+									<header>
+										<h2>Connect with us!</h2>
+									</header>
+									<ul class="social">
+										<li><a class="icon fa-facebook" href="https://www.facebook.com/SplashLearningUnlimited/?ref=br_rs"><span class="label">Facebook</span></a></li>
+										<li><a class="icon fa-twitter" href="https://twitter.com/LUMakeASplash"><span class="label">Twitter</span></a></li>
+										<li><a class="icon fa-linkedin" href="https://www.linkedin.com/company/learning-unlimited_2/"><span class="label">LinkedIn</span></a></li>
+									</ul>
+									<ul class="contact">
+										<!--<li>
+											<h3>Address</h3>
+											<p>
+												Untitled Incorporated<br />
+												1234 Somewhere Road Suite<br />
+												Nashville, TN 00000-0000
+											</p>
+										</li>-->
+										<li>
+											<h3>Mail</h3>
+											<p><a href="mailto:info@learningu.org">info@learningu.org</a></p>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<p>(617) 379-0178</p>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+
+								<!-- Copyright -->
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; 2018 Learning Unlimited. All rights reserved.</li><li>Design based on: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+						</div>
+					</section>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/skel-viewport.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+			<script src="/assets/css/owl/owl.carousel.js"></script>
+
+	<style>
+  #owl-demo .item{
+  background: #a1def8;
+  padding: 30px 0px;
+  display: block;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+    </style>
+
+    <script>
+
+    $(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+    jsonPath : '/media/databases/owl_files.json',
+    jsonSuccess : customDataSuccess
+  });
+ 
+  function customDataSuccess(data){
+    var content = "";
+    for(var i in data["items"]){
+       
+       var img = data["items"][i].img;
+       var alt = data["items"][i].alt;
+ 
+       content += "<div class ='ccontainer'><div class='crop'><img src='" +img+ "' alt='" +alt+ "'></div><div class='centered'><h2><font color='white'>"+alt+"</font></h2></div></div>"
+    }
+    $("#owl-demo").html(content);
+  }
+ 
+});
+ 
+    </script>
+
+	</body>
 </html>

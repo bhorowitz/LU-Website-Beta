@@ -1,0 +1,28 @@
+{
+  "items" : [
+    {
+      "img": "/media/images/new_photos/college/yale.jpg",
+      "alt" : "Yale University"
+    },
+    {
+      "img": "/media/images/new_photos/college/oxford.jpg",
+      "alt" : "University of Oxford"
+    },
+     {
+      "img": "/media/images/new_photos/college/yale.jpg",
+      "alt" : "UC, Berkeley"
+    },
+    {
+      "img": "/media/images/new_photos/college/oxford.jpg",
+      "alt" : "UC, Los Angeles"
+    },
+     {
+      "img": "/media/images/new_photos/college/yale.jpg",
+      "alt" : "Yale"
+    },
+    {
+      "img": "/media/images/new_photos/college/oxford.jpg",
+      "alt" : "Oxford"
+    }
+  ]
+}

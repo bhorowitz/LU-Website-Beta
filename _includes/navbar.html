@@ -1,18 +1,45 @@
-<div>
-  {% assign sorted_collections = site.collections | sort: 'seq' %}
-  {% for collection in sorted_collections %}
-    {% if collection.nav %}
-      <span class="link">
-        <a href="{% if collection.url %}{{collection.url}}{% else %}/{{ collection.label }}{% endif %}"><img src="/media/images/content-pages/navbar-links/{% if collection.label == section.label %}current{% else %}normal{% endif %}/{{ collection.label }}.gif" alt="{{ collection.title }}" class="normal"/><img src="/media/images/content-pages/navbar-links/hover/{{ collection.label }}.gif" alt="{{ collection.title }}" class="hover"/></a>
-      </span>
-      {% if collection.sep %}
-        <span class="separator">
-          <img src="/media/images/content-pages/bullet.gif" alt="" />
-        </span>
-      {% elsif collection.br %}
-        </div>
-        <div>
-      {% endif %}
+           <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass("current"); $(this).parents('li').addClass("current");
+            }
+            if ($(this).prop('href').split("/")[3] == window.location.pathname.split("/")[1]) {
+                $(this).addClass("current"); $(this).parents('li').addClass("current");
+            }            
+        });
+    });
+</script>
+  
+        <div id="header-wrapper">
+          <div id="header">
+
+            <!-- Logo -->
+              <h1><a href="index.html">Learning Unlimited</a></h1>
+
+            <!-- Nav -->
+              <nav id="nav">
+                <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li>
+                    {% assign sorted_collections = site.collections | sort: 'seq' %}
+                      {% for collection in sorted_collections %}
+                       {% if collection.nav %}
+                  <li><a href="{% if collection.url %}{{collection.url}}{% else %}/{{ collection.label }}{% endif %}">{{ collection.title }}</a>
+                    {% if collection.subfolderitems %}
+                    <ul>
+                     {% for entry in collection.subfolderitems %}
+                     <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+                     {% endfor %}
+                    </ul>
+                    {% endif %}
+                  </li>
+
     {% endif %}
   {% endfor %}
-</div>
+                </ul>
+              </nav>
+
+          </div>
+        </div>
