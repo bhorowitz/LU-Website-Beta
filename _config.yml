@@ -77,12 +77,6 @@ collections:
         url: /becoming-a-chapter/how-we-help/
       - page: Frequently Asked Questions
         url: /becoming-a-chapter/frequently-asked-questions/
-  contact:
-    output: true
-    seq: 50
-    nav: true
-    br: true
-    title: "Contact"
 #  participate:
 #    output: true
 #    seq: 50
