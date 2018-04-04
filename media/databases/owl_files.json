@@ -17,12 +17,20 @@
       "alt" : "UC, Los Angeles"
     },
      {
-      "img": "/media/images/new_photos/college/yale.jpg",
-      "alt" : "Yale"
+      "img": "/media/images/new_photos/college/neu.jpg",
+      "alt" : "Northeastern University"
     },
     {
-      "img": "/media/images/new_photos/college/oxford.jpg",
-      "alt" : "Oxford"
+      "img": "/media/images/new_photos/college/gw.jpg",
+      "alt" : "George Washington University"
+    },
+    {
+      "img": "/media/images/new_photos/college/bc.jpg",
+      "alt" : "Boston College"
+    },
+    {
+      "img": "/media/images/new_photos/college/duke.jpg",
+      "alt" : "Duke University"
     }
   ]
 }
