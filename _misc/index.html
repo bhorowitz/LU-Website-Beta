@@ -6,8 +6,8 @@ title: Index
 
     <link href="/assets/css/owl/owl.carousel.css" rel="stylesheet">
     <link href="/assets/css/owl/owl.theme.css" rel="stylesheet">
-
     <link href="/assets/css/owl/prettify.css" rel="stylesheet">
+    <link href="/assets/js/main.js" rel="script">
 
 						<!-- Banner -->
 							<section id="banner">
@@ -165,21 +165,50 @@ title: Index
 								<!-- Blog -->
 									<section>
 										<header class="major">
-											<h2>The Blog</h2>
+											<h2>Our Values</h2>
 										</header>
 										<div class="row">
 											<div class="6u 12u(mobile)">
 												<section class="box">
 													<header>
-														<h3>Aptent veroeros et aliquam</h3>
+														<h3>Key values...</h3>
 													</header>
 													<div class="container" style="max-width:100%;">
 													  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+                                                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                                      <script>
+                                                      //The next step is to make sure that each of the four buttons hides all and shows only the relevant one
+                                                          $(document).ready(function(){
+                                                              $("#b1").click(function(){
+                                                                  $("#choice").fadeToggle("very slow");
+                                                                  $("#opportunity").fadeOut("very slow");
+                                                                  $("#accessibility").fadeOut("very slow");
+                                                                  $("#autonomy").fadeOut("very slow");
+                                                              });
+                                                              $("#b2").click(function(){
+                                                                  $("#choice").fadeOut("very slow");
+                                                                  $("#opportunity").fadeToggle("very slow");
+                                                                  $("#accessibility").fadeOut("very slow");
+                                                                  $("#autonomy").fadeOut("very slow");
+                                                              });
+                                                              $("#b3").click(function(){
+                                                                  $("#choice").fadeOut("very slow");
+                                                                  $("#opportunity").fadeOut("very slow");
+                                                                  $("#accessibility").fadeToggle("very slow");
+                                                                  $("#autonomy").fadeOut("very slow");
+                                                              });
+                                                              $("#b4").click(function(){
+                                                                  $("#choice").fadeOut("very slow");
+                                                                  $("#opportunity").fadeOut("very slow");
+                                                                  $("#accessibility").fadeOut("very slow");
+                                                                  $("#autonomy").fadeToggle("very slow");
+                                                              });
+                                                          });
+                                                        </script>
 													  <br /><br />
 													  <ul class="collapsible" data-collapsible="accordion">
 													    <li>
-													      <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>Choice
-													      </div>
+													      <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i><button id="b1">Choice</button></div>
 													      <div class="collapsible-body">
 														<p>Learning Unlimited encourages university students to choose what they most want to teach, using their passion as a resource for effective teaching.
 														Meanwhile, pre-college students choose their own courses, often among hundreds of options, at each of our programs.
@@ -189,7 +218,7 @@ title: Index
 													      </div>
 													    </li>
 													    <li>
-													      <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>Opportunity</div>
+													      <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i><button id="b2">Opportunity</button></div>
 													      <div class="collapsible-body">
 														<p>
 														Learning Unlimited believes that every student should have access to exciting educational experiences.
@@ -200,7 +229,7 @@ title: Index
 													      </div>
 													    </li>
 													    <li>
-													      <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>Accessibility</div>
+													      <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i><button id="b3">Accessibility</button></div>
 													      <div class="collapsible-body">
 														<p>Learning Unlimited encourages its programs to make teaching and leadership opportunities available to all students at each university,
 														so that its programs are accessible to all university students (and often community members).
@@ -210,7 +239,7 @@ title: Index
 													       </div>
 													    </li>
 													    <li>
-													      <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>Autonomy</div>
+													      <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i><button id="b4">Autonomy</button></div>
 													      <div class="collapsible-body">
 														<p>
 														Each chapter of Learning Unlimited is an independent organization led by college students.
@@ -229,9 +258,21 @@ title: Index
 											<div class="6u 12u(mobile)">
 												<section class="box" style="max-width:100%;">
 													<header>
-														<h3>Aptent veroeros et aliquam</h3>
+														<h3>...at work</h3>
 													</header>
 													[Testimonials corresponding to the values that appear on click.]
+                                                    <div id="choice" style="display:none;">
+                                                        Testimonial #1 text on choice blah blah.
+                                                    </div>
+                                                    <div id="opportunity" style="display:none;">
+                                                        Testimonial #2 text on opportunity blah blah.
+                                                    </div>
+                                                    <div id="accessibility" style="display:none;">
+                                                        Testimonial #3 text on accessibility blah blah.
+                                                    </div>
+                                                    <div id="autonomy" style="display:none;">
+                                                        Testimonial #4 text on autonomy blah blah.
+                                                    </div>
 												</section>
 											</div>
 										</div>
