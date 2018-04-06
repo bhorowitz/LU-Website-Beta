@@ -3,6 +3,50 @@ layout: default
 title: Who We Are
 seq: 30
 ---
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+
 <div id="main-wrapper">
           <div class="container">
 
@@ -18,46 +62,90 @@ seq: 30
 
 <div class="row">
                       <div class="4u 12u(mobile)">
+                        <div class="card">
                         <section class="box">
-                          <a href="#" class="image featured"><img src="/media/images/biopics/ben.jpeg" alt="" /></a>
+                          <a href="#" class="image featured"><img src="/media/images/biopics/ben.jpeg" alt="Ben" /></a>
                           <header>
                             <h2>Benjamin Horowitz</h2>
                           </header>
                           <h4>Executive Director</h4>
+
                           <footer>
-                            <a href="#" class="button alt">Read More</a>
+                            <button class="openmodal myBtn">Read More</button>
                           </footer>
+
+                          <!-- The Modal -->
+                          <div class="modal myModal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              {% include /bio_pages/benh.html %}
+                            </div>
+
+                          </div>
                         </section>
                       </div>
+                      </div>
+
                       <div class="4u 12u(mobile)">
+                        <div class="card">
                         <section class="box">
                           <a href="#" class="image featured"><img src="/media/images/biopics/vanessa_bw.jpg" alt="" /></a>
                           <header>
                             <h2>Vanessa Barksdale</h2>
                           </header>
                           <h4>Board Chair</h4>
-                          <footer>
-                            <a href="#" class="button alt">Read More</a>
+                            <footer>
+                            <button class="openmodal myBtn">Read More</button>
                           </footer>
+
+                          <!-- The Modal -->
+                          <div class="modal myModal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              {% include /bio_pages/vanessa.html %}
+                            </div>
+
+                          </div>
                         </section>
+                        </div>
+
                       </div>
                       <div class="4u 12u(mobile)">
+                        <div class="card">
                         <section class="box">
-                          <a href="#" class="image featured"><img src="/media/images/biopics/ben.jpeg" alt="" /></a>
+                         <!-- <a href="#" class="image featured"><img src="/media/images/biopics/ben.jpeg" alt="" /></a>-->
                           <header>
                             <h2>Ted Hwa</h2>
                           </header>
                           <h4>Chief Financial Officer</h4>
                           <footer>
-                            <a href="#" class="button alt">Read More</a>
+                            <button class="openmodal myBtn">Read More</button>
                           </footer>
+
+                          <!-- The Modal -->
+                          <div class="modal myModal">
+
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              {% include /bio_pages/ted.html %}
+                            </div>
+
+                          </div>
                         </section>
+                        </div>
                       </div>
                     </div>
 <div class="row">
   <div class="4u 12u(mobile)">
+                        <div class="card">
                         <section class="box">
-                          <a href="#" class="image featured"><img src="/media/images/biopics/ben.jpeg" alt="" /></a>
+                          <a href="#" class="image featured"><img src="/media/images/biopics/miles_bw.jpg" alt="" /></a>
                           <header>
                             <h2>Miles Calabresi</h2>
                           </header>
@@ -67,9 +155,11 @@ seq: 30
                             <a href="#" class="button alt">Read More</a>
                           </footer>
                         </section>
+                        </div>
                       </div>
 
                       <div class="4u 12u(mobile)">
+                        <div class="card">
                         <section class="box">
                           <a href="#" class="image featured"><img src="/media/images/biopics/jonelle.jpg" alt="" /></a>
                           <header>
@@ -81,9 +171,11 @@ seq: 30
                             <a href="#" class="button alt">Read More</a>
                           </footer>
                         </section>
+                        </div>
                       </div>
 
                     <div class="4u 12u(mobile)">
+                        <div class="card">
                         <section class="box">
                           <a href="#" class="image featured"><img src="/media/images/biopics/eva.jpg" alt="" /></a>
                           <header>
@@ -94,6 +186,7 @@ seq: 30
                             <a href="#" class="button alt">Read More</a>
                           </footer>
                         </section>
+                        </div>
                       </div>
                     </div>
 
@@ -101,6 +194,7 @@ seq: 30
                     <div class="row">
 
                       <div class="4u 12u(mobile)">
+                        <div class="card">
                         <section class="box">
                           <a href="#" class="image featured"><img src="/media/images/biopics/benkraft.png" alt="" /></a>
                           <header>
@@ -111,8 +205,10 @@ seq: 30
                             <a href="#" class="button alt">Read More</a>
                           </footer>
                         </section>
+                        </div>
                       </div>
                       <div class="4u 12u(mobile)">
+                        <div class="card">
                         <section class="box">
                           <a href="#" class="image featured"><img src="/media/images/biopics/benkraft.png" alt="" /></a>
                           <header>
@@ -124,8 +220,10 @@ seq: 30
                             <a href="#" class="button alt">Read More</a>
                           </footer>
                         </section>
+                        </div>
                       </div>
                       <div class="4u 12u(mobile)">
+                        <div class="card">
                         <section class="box">
                           <a href="#" class="image featured"><img src="/media/images/biopics/benkraft.png" alt="" /></a>
                           <header>
@@ -137,6 +235,7 @@ seq: 30
                             <a href="#" class="button alt">Read More</a>
                           </footer>
                         </section>
+                        </div>
                       </div>
                     </div>
                   </section>
