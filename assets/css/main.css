@@ -2564,6 +2564,17 @@
     height: 300px;
 }
 
+
+.imgContainer {
+  overflow: hidden;
+  width: 375px;
+  height: 375px;
+}
+.imgContainer img {
+  width: 375px;
+  height: 375px;
+}
+
 .ccontainer {
     position: relative;
     text-align: center;
