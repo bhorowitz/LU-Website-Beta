@@ -2555,13 +2555,13 @@
 	.crop {
     width: 225px;
     height: 225px;
+
     overflow: hidden;
 }
 
 .crop img {
     width: 400px;
     height: 300px;
-    margin: -75px 0 0 -100px;
 }
 
 .ccontainer {

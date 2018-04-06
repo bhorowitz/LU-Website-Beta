@@ -6,13 +6,37 @@
     },
     {
       "img": "/media/images/new_photos/college/oxford.jpg",
-      "alt" : "University of Oxford"
+      "alt" : "Oxford University"
     },
      {
       "img": "/media/images/new_photos/college/yale.jpg",
-      "alt" : "UC, Berkeley"
+      "alt" : "UC Berkeley"
+    },
+     {
+      "img": "/media/images/new_photos/college/ucm.jpeg",
+      "alt" : "UC Merced"
+    },
+     {
+      "img": "/media/images/new_photos/college/yale.jpg",
+      "alt" : "UC Los Angeles"
+    },
+     {
+      "img": "/media/images/new_photos/college/yale.jpg",
+      "alt" : "UC San Diego"
     },
     {
+      "img": "/media/images/new_photos/college/oxford.jpg",
+      "alt" : "UC Los Angeles"
+    },
+        {
+      "img": "/media/images/new_photos/college/oxford.jpg",
+      "alt" : "University of Chicago"
+    },
+        {
+      "img": "/media/images/new_photos/college/oxford.jpg",
+      "alt" : "Northwestern"
+    },
+        {
       "img": "/media/images/new_photos/college/oxford.jpg",
       "alt" : "UC, Los Angeles"
     },

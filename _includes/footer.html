@@ -138,7 +138,22 @@
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  align-items: center;
   text-align: center;
+  display: inline-block;
+}
+
+.owl-demo .caption {
+  text-align: center;
+  display: inline-block;
+}
+
+.owl-demo div .textoverlay{
+    position:absolute;
+    text-align: center;
+    color:#FFF;
+   font-size:35px;
+   display:block;
 }
     </style>
 
@@ -150,7 +165,7 @@
     jsonPath : '/media/databases/owl_files.json',
     jsonSuccess : customDataSuccess
   });
- 
+
   function customDataSuccess(data){
     var content = "";
     for(var i in data["items"]){
@@ -158,7 +173,7 @@
        var img = data["items"][i].img;
        var alt = data["items"][i].alt;
  
-       content += "<div class ='ccontainer'><div class='crop'><img src='" +img+ "' alt='" +alt+ "'></div><div class='centered'><h2><font color='white'>"+alt+"</font></h2></div></div>"
+       content += "<div class ='ccontainer'><div class='crop'><div class='textoverlay'><h2>"+alt+"</h2></div><img src='" +img+ "' alt='" +alt+ "'></div></div>"
     }
     $("#owl-demo").html(content);
   }
