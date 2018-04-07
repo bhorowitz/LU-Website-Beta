@@ -25,6 +25,11 @@ $(function() {
   font-size: 120%;
   color: #666;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 </style>
 
 <div id="main-wrapper">
@@ -42,7 +47,8 @@ $(function() {
 <section>
 <div id="programmap">
   <div style="position: absolute;">
-    <img src="/media/images/photos/lu-map-UK.jpg" width="700" height="438" alt="Map" usemap="#areamap">
+    <img src="/media/images/photos/lu-map-UK.jpg" alt="Map" usemap="#areamap">
+ 
     <map name="areamap"> <!-- map regions are northeast, midwest, midatlantic, south, west -->
       <area shape="poly" coords="544,170,600,175,607,183,700,183,700,30,544,30" href="#" alt="Northeast" onmouseover="areaclick('northeast');">
       <area shape="rect" coords="325,131,485,281" href="#" alt="Midwest" onmouseover="areaclick('midwest');">
