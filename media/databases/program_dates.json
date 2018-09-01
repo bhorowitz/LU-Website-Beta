@@ -24,35 +24,53 @@
       "program_url": "https://Yale.learningu.org/",
       "subtext": "3 week-long program"
     },
-           {
+      {
       "date": "2018-06-09",
       "program_name": "Splash at Oxford",
       "program_url": "https://Yale.learningu.org/",
       "subtext": "Something Else"
     },
       {
-      "date": "2018-09-06",
-      "program_name": "Splash at Yale Again",
-      "program_url": "https://Yale.learningu.org/",
-      "subtext": "None"
+      "date": "2018-09-30",
+      "program_name": "Sprout at Yale",
+      "program_url": "https://yale.learningu.org/learn/sprout.html",
+      "subtext": "Week 1 of 3"
     },
       {
-      "date": "2018-10-06",
-      "program_name": "Splash at Yale Again",
-      "program_url": "https://Yale.learningu.org/",
-      "subtext": "None"
+      "date": "2018-10-07",
+      "program_name": "Sprout at Yale",
+      "program_url": "https://yale.learningu.org/learn/sprout.html",
+      "subtext": "Week 2 of 3"
     },
       {
-      "date": "2018-09-06",
-      "program_name": "Splash at Yale Again",
-      "program_url": "https://Yale.learningu.org/",
-      "subtext": "None"
+      "date": "2018-10-14",
+      "program_name": "Sprout at Yale",
+      "program_url": "https://yale.learningu.org/learn/sprout.html",
+      "subtext": "Week 3 of 3"
     },
       {
-      "date": "2018-09-06",
-      "program_name": "Splash at Yale Again",
-      "program_url": "https://Yale.learningu.org/",
-      "subtext": "None"
+      "date": "2018-10-27",
+      "program_name": "Splash at Yale",
+      "program_url": "https://yale.learningu.org/learn/splash.html",
+      "subtext": "One-day program"
+    },
+      {
+      "date": "2018-11-05",
+      "program_name": "Clark U Splash",
+      "program_url": "https://clarkuesp.learningu.org/learn/index.html",
+      "subtext": "One-day program"
+    },
+      {
+      "date": "2018-11-18",
+      "program_name": "MIT Splash",
+      "program_url": "https://esp.mit.edu/learn/Splash/moreinfo.html",
+      "subtext": "Day 1 of 2"
+    },
+      {
+      "date": "2018-11-19",
+      "program_name": "MIT Splash",
+      "program_url": "https://esp.mit.edu/learn/Splash/moreinfo.html",
+      "subtext": "Day 2 of 2"
     }
   ]
 }
