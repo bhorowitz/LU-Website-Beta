@@ -89,3 +89,5 @@ collections:
     nav: true
     title: "Give"
     url: https://donatenow.networkforgood.org/1442637
+
+theme: jekyll-theme-minimal
